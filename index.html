@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#fffaf0">
+    <title>Family Mart</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Fascinate+Inline&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Fascinate+Inline&display=swap"></noscript>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#faqs">FAQs</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <h1 id="title">The Family Mart</h1>
+    </header>
+
+    <section class="gallery">
+        <img id="gallery-img" src="img1.jpg" alt="Gallery Image" loading="lazy" />
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <p>The Family Mart is operated by two youngsters to make your life easy peasy lemon squeezy</p>
+            <p>Everything and anything you need is just a call away. Try us and you will never leave us!</p>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="product1.jpg" alt="Tree Treasures" loading="lazy">
+                <p>Tree Treasures</p>
+            </div>
+            <div class="product">
+                <img src="product2.jpg" alt="Garden Greens" loading="lazy">
+                <p>Garden Greens</p>
+            </div>
+            <div class="product">
+                <img src="product3.jpg" alt="Munchables" loading="lazy">
+                <p>Munchables</p>
+            </div>
+            <div class="product">
+                <img src="product4.jpg" alt="Healing Agents" loading="lazy">
+                <p>Healing Agents</p>
+            </div>
+            <div class="product">
+                <img src="product5.jpg" alt="Desk Essentials" loading="lazy">
+                <p>Desk Essentials</p>
+            </div>
+            <div class="product">
+                <img src="product6.jpg" alt="Desk Essentials" loading="lazy">
+                <p>Desk Essentials</p>
+            </div>
+        </div>
+        <form id="request-form">
+            <h3 class="form-heading">Request a New Product</h3>
+            <input type="text" placeholder="User Name" required>
+            <input type="tel" placeholder="Contact No" required pattern="[0-9]{10}">
+            <input type="text" placeholder="Product Demanded" required>
+            <input type="date" placeholder="Need it by" required>
+            <button type="submit">Submit</button>
+            <p id="request-success"></p>
+        </form>
+    </section>
+
+    <section id="faqs">
+        <h2>FAQs</h2>
+        <div class="faq-columns">
+            <div class="faq">Q1: What are your store hours?<br/>A: 8 AM - 10 PM Monday to Sunday at your service</div>
+            <div class="faq">Q2: Do you offer home delivery?<br/>A: Yes, within city limits we serve as you please</div>
+            <div class="faq">Q3: Can I return a product?<br/>A: Yes, within 7 days make sure to bring your bills</div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Home Delivery</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Name" required>
+            <div class="contact-input-group">
+                <input type="tel" placeholder="Contact No" required pattern="[0-9]{10}">
+                <input type="email" placeholder="Email Address" required>
+            </div>
+            <input type="text" placeholder="Address" required>
+            <input type="text" placeholder="Product" required>
+            <button type="submit">Submit</button>
+            <p id="contact-success"></p>
+        </form>
+        <div class="contact-info">
+            <p><a href="tel:+9112345678">📞 +91 1234 5678</a></p>
+            <p><a href="mailto:familymart@gmail.com">✉ familymart@gmail.com</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Family Mart. All rights reserved.</p>
+    </footer>
+</body>
+</html>
