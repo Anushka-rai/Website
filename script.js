@@ -23,6 +23,6 @@ const contactSuccess = document.getElementById('contact-success');
 
 contactForm.addEventListener('submit', function (e) {
     e.preventDefault();
-    contactSuccess.textContent = "Your product has been requested successfully We will get in touch with you soon !";
+    contactSuccess.textContent = "Your request has been successfully placed We will get in touch with you soon !";
     contactForm.reset();
 });
